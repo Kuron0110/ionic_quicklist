@@ -35,6 +35,12 @@
             <ion-icon slot="icon-only" name="trash"></ion-icon>
         </ion-item-options>
       </ion-item-sliding>
+
+      <ion-item *ngFor="let checkListItem of checklists">
+        <ion-label>{{checkListItem.title}}</ion-label>
+        <span>{{checkListItem.completed}}</span>
+      </ion-item>
+
     </ion-list>
   </div>
 </ion-content>
